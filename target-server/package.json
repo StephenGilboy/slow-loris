@@ -1,0 +1,9 @@
+{
+  "name": "target-server",
+  "version": "1.0.0",
+  "description": "Target of Slow Loris attack",
+  "main": "index.js",
+  "author": "Stephen Gilboy",
+  "license": "MIT",
+  "private": false
+}
