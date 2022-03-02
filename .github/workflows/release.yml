@@ -10,11 +10,13 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: ./Attack/src/slowloris
     steps:
       - uses: actions/checkout@v2
       - name: Setup .NET Core SDK ${{ env.DOTNET_VERSION }}
-        uses: actions/setup-dotnet@v1.7.2
+        uses: actions/setup-dotnet@v1
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
