@@ -24,7 +24,7 @@ jobs:
         run: dotnet restore
       
       - name: Build
-        run: dotnet build --configuration Release --no-restore --self-contained true --output dist --runtime linux-x64
+        run: dotnet build --configuration Release --no-restore --self-contained true --output dist --os linux-x64
       
       - name: Upload Binary
         uses: actions/upload-artifact@v2
