@@ -29,5 +29,3 @@ jobs:
         with:
           name: dist
           path: dist
-          # Use always() to always run this step to publish test results when there are test failures
-          if: ${{ always() }}
