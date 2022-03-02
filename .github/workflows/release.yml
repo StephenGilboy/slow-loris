@@ -24,7 +24,7 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore --self-contained true --output dist
       
-      - name: Upload dotnet test results
+      - name: Upload Binary
         uses: actions/upload-artifact@v2
         with:
           name: dist
